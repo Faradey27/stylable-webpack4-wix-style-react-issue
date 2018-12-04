@@ -8,9 +8,10 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      maxAsyncRequests: 5,
+      chunks: 'all',
+      name: true,
       maxInitialRequests: 1,
-      name: true
+      maxAsyncRequests: 20,
     },
   },
   module: {

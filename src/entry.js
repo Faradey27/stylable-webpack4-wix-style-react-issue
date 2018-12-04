@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import Badge from 'wix-style-react/Badge';
 
 class Root extends React.Component {
   state = {}
@@ -17,7 +18,9 @@ class Root extends React.Component {
         return null
     }
 
-    return <AsyncBadge>Badge with awesome default blue style</AsyncBadge>
+    return <div>
+      <AsyncBadge>Badge with awesome default blue style</AsyncBadge>
+      </div>
   }
 }
 
