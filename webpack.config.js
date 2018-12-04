@@ -11,7 +11,6 @@ module.exports = {
     splitChunks: {
       chunks: 'all',
       maxInitialRequests: 1,
-      maxAsyncRequests: 1,
     },
   },
   module: {
