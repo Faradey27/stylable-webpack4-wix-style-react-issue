@@ -2,15 +2,15 @@ const StylableWebpackPlugin = require('@stylable/webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: {
-    entryWsr: './src/entry-wsr-sync.js',
     'entry': './src/entry.js',
   },
   optimization: {
     splitChunks: {
-      chunks: 'all',
+      maxAsyncRequests: 5,
       maxInitialRequests: 1,
+      name: true
     },
   },
   module: {

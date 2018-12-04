@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'wix-style-react/Label';
-import(/* webpackChunkName: "magicasync" */ 'wix-style-react/Badge');
 
 class Root extends React.Component {
   state = {}
