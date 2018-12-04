@@ -2,7 +2,7 @@ const StylableWebpackPlugin = require('@stylable/webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+  mode: 'production',
   entry: {
     entryWsr: './src/entry-wsr-sync.js',
     'entry': './src/entry.js',
