@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    entryWsr: './src/entry-wsr-sync.js',
+    // entryWsr: './src/entry-wsr-sync.js',
     'entry': './src/entry.js',
   },
   optimization: {
@@ -39,6 +39,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'index.html'
     }),
-    new StylableWebpackPlugin(),
+    new StylableWebpackPlugin({
+      useWeakDeps: true
+    }),
   ]
 };
